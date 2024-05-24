@@ -9,9 +9,9 @@ class Connection
 
         $info = array(
 
-            "database" => "api-electiva",
-            "user" => "root",
-            "pass" => ""
+            "database" => "defaultdb",
+            "user" => "avnadmin",
+            "pass" => "AVNS_qYIrkec_vlZcs8RDcnq"
 
         );
 
@@ -24,7 +24,7 @@ class Connection
         try {
 
             $conn = new PDO(
-                'mysql:host=localhost;dbname=' . Connection::infoDatabase()['database'],
+                'mysql:host=api-parcial-ariel-0897.l.aivencloud.com;port=27639;dbname=' . Connection::infoDatabase()['database'],
                 Connection::infoDatabase()['user'],
                 Connection::infoDatabase()['pass']
             );
